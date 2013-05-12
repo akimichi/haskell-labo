@@ -1,0 +1,17 @@
+-- import System.Environment
+
+-- main = do
+--     getProgName >>= print
+--     runTestTT testIO
+module Main where
+import Test.Framework
+
+-- |
+--
+tests :: [Test]
+tests = []
+
+-- |
+--
+main :: IO ()
+main = flip catch print $ defaultMain tests
