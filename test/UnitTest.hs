@@ -1,8 +1,3 @@
--- import System.Environment
-
--- main = do
---     getProgName >>= print
---     runTestTT testIO
 module Main where
 import Test.Framework
 
