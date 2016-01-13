@@ -6,12 +6,14 @@ import Control.Exception (evaluate)
 double :: Int -> Int
 double x = x * x
 
+succ :: Int -> Int
+succ x = x + 1
+
 main :: IO ()
 main = hspec $ do
   describe "Introduction to Functional Programming using Haskell" $ do
-    -- it "define lambda expression" $ do
-    --   succ = \x  -> x + 1
-    --   succ 10 `shouldBe` (4 :: Int)
+    it "define lambda expression" $ do
+      succ 10 `shouldBe` (4 :: Int)
 
     it "double returns the doubled value" $ do
       double 2 `shouldBe` (4 :: Int)
