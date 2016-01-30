@@ -5,6 +5,7 @@ name:                haskell-labo
 version:             0.1.0.0
 -- synopsis:            
 -- description:         
+homepage:            https://github.com/akimichi/haskell-labo
 license:             MIT
 license-file:        LICENSE
 author:              Akimichi Tatsukawa
@@ -12,31 +13,24 @@ maintainer:          akimichi.tatsukawa@gmail.com
 -- copyright:           
 category:            Testing
 build-type:          Simple
+extra-source-files:  README.md
 cabal-version:       >=1.10
-Library
-  -- exposed-modules:     
-  -- other-modules:       
-  default-language: Haskell2010
-  build-depends:       base ==4.5.*
 
-Test-Suite UnitTest
-    type:             exitcode-stdio-1.0
-    main-is:          UnitTest.hs
-    hs-source-dirs:   test/
-    default-language: Haskell2010
-    build-depends: base < 5
-                 , directory, mtl, HUnit
-                 , test-framework, test-framework-hunit
-    -- build-depends: base < 5, Test
-    --              , directory, mtl, HUnit
-    --              , test-framework, test-framework-hunit
-Test-Suite spec
-  Type:                 exitcode-stdio-1.0
-  Default-Language:     Haskell2010
-  Hs-Source-Dirs:       test
-  Ghc-Options:          -Wall
-  Main-Is:              Spec.hs
-  -- Other-Modules:        Base64Spec
-  Build-Depends:        base
-                      , hspec >= 1.3
-                      , QuickCheck
+library
+  -- exposed-modules:     Chap06Spec, Haq, HSpecTests, QCheckSpec, Spec, UnitTest, Spec
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:       base >=4.8 && <4.9, hspec >=2.2 && <2.3, QuickCheck >=2.8 && <2.9
+  hs-source-dirs:      src/main/haskell
+  default-language:    Haskell2010
+test-suite tests
+   ghc-options: -Wall
+   default-extensions:  OverloadedStrings
+   type: exitcode-stdio-1.0
+   main-is: Spec.hs
+   -- Other-Modules:       HSpecTests
+   hs-source-dirs:      src/test/haskell
+   build-depends:       base,
+                        hspec                >= 1.8,
+                        QuickCheck
+   default-language:    Haskell2010

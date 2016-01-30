@@ -1,10 +1,14 @@
-dist
+.emacs.desktop*
+*~
+# haskell
+.stack-work
 cabal-dev
 *.o
 *.hi
 *.chi
 *.chs.h
 .virthualenv
+dist/
 
-.emacs.desktop*
-*~
+# node.js
+node_modules
