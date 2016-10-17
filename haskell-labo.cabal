@@ -17,7 +17,8 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
-  -- exposed-modules:     Chap06Spec, Haq, HSpecTests, QCheckSpec, Spec, UnitTest, Spec
+  exposed-modules: ProgrammingInHaskell2.Chap02
+  -- exposed-modules:     Chap06Spec, QCheckSpec, Spec, UnitTest, Spec
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.8 && <4.9, hspec >=2.2 && <2.3, QuickCheck >=2.8 && <2.9
@@ -31,6 +32,7 @@ test-suite tests
    -- Other-Modules:       HSpecTests
    hs-source-dirs:      test
    build-depends:       base,
+                        haskell-labo,
                         hspec                >= 1.8,
                         hspec-expectations,
                         QuickCheck
