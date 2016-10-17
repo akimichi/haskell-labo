@@ -1,6 +1,7 @@
 module Chap06Spec where
  
-import Test.Hspec
+import SpecHelper
+-- import Test.Hspec
  
 -- #@range_begin(left_and_infiniteLoop_in_haskell) 
 left x y = x

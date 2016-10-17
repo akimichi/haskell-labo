@@ -1,10 +1,8 @@
-module Chap02 where
+module ProgrammingInHaskell2.Chap02Spec (spec) where
  
-import Test.Hspec
+import SpecHelper
+-- import Test.Hspec
  
-left x y = x
-infiniteLoop = infiniteLoop
-
 -- main :: IO ()
 -- main = hspec $ do
 main :: IO ()

@@ -1,6 +1,7 @@
 module IntroductionToHaskellSpec where
 
-import Test.Hspec
+import SpecHelper
+-- import Test.Hspec
 -- import Test.QuickCheck
 -- import Control.Exception (evaluate)
 
