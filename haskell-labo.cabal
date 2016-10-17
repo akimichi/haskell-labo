@@ -35,5 +35,6 @@ test-suite tests
                         haskell-labo,
                         hspec                >= 1.8,
                         hspec-expectations,
+                        transformers,
                         QuickCheck
    default-language:    Haskell2010
