@@ -17,10 +17,12 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
-  exposed-modules: ProgrammingInHaskell2.Chap02
+  exposed-modules: ProgrammingInHaskell2.Chap02,
+                   ProgrammingInHaskell2.Chap05
   -- other-modules:       
   -- other-extensions:    
-  build-depends:       base >=4.5 && <4.9, hspec >=2.2 && <2.3, QuickCheck >=2.8 && <2.9
+  build-depends:       base >=4.5 && <4.9, hspec >=2.2 && <2.3, QuickCheck >=2.6 && <2.9
+  -- build-depends:       base >=4.5 && <4.9, hspec >=2.2 && <2.3, QuickCheck >=2.8 && <2.9
   -- build-depends:       base >=4.8 && <4.9, hspec >=2.2 && <2.3, QuickCheck >=2.8 && <2.9
   hs-source-dirs:      src
   default-language:    Haskell2010
