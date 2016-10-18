@@ -1,4 +1,4 @@
-module Life  where
+module ProgrammingInHaskell2.Life  where
 
 import ProgrammingInHaskell2.Chap10
 
