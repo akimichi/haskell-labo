@@ -18,7 +18,8 @@ cabal-version:       >=1.10
 
 library
   exposed-modules: ProgrammingInHaskell2.Chap02,
-                   ProgrammingInHaskell2.Chap05
+                   ProgrammingInHaskell2.Chap05,
+                   ProgrammingInHaskell2.Chap06
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.5 && <4.9, hspec >=2.2 && <2.3, QuickCheck >=2.6 && <2.9
