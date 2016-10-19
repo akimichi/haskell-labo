@@ -5,3 +5,4 @@ module SpecHelper
 
 import Test.Hspec
 import Test.QuickCheck
+
