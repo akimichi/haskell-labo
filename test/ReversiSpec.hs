@@ -28,3 +28,20 @@ spec = do
                    [O,B,B,B,B,B,B,B]]
           (diag grid) `shouldBe` [B,B,B,B,B,B,B,B]
           (diag (L.transpose grid)) `shouldBe` [B,B,B,B,B,B,B,B]
+     context "piece" $ do
+        it "piece empty" $ do
+            piece empty (0,0) `shouldBe` B 
+            piece empty (1,0) `shouldBe` B 
+        it "piece grid" $ do
+          let grid = [[B,B,B,B,B,B,B,B],
+                   [B,B,B,B,B,B,O,B],
+                   [B,B,B,B,B,O,B,B],
+                   [B,B,B,B,O,B,B,B],
+                   [B,B,B,O,B,B,B,B],
+                   [B,B,O,B,B,B,B,B],
+                   [B,O,B,B,B,B,B,B],
+                   [O,B,B,B,B,B,B,B]]
+          piece grid (0,0) `shouldBe` B 
+          piece grid (7,0) `shouldBe` O 
+          isVacant grid (1,1) `shouldBe` True 
+          isVacant grid (7,0) `shouldBe` False 

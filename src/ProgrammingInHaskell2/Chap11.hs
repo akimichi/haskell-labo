@@ -20,3 +20,10 @@ next X = O
 
 empty :: Grid
 empty = replicate size (replicate size B)
+
+
+-- interleave inserts a value between each element in a list.
+interleave :: a -> [a] -> [a]
+interleave x [] = []
+interleave x [y] = [y]
+interleave x (y:ys) = y : x : interleave x ys

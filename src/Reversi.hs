@@ -8,6 +8,8 @@ size :: Int
 size = 8
 
 type Grid = [[Player]]
+type Pos = (Int,Int)
+type Move = (Player,Pos)
 
 data Player = O | B | X
             deriving (Eq, Ord, Show)
@@ -47,3 +49,8 @@ wins player grid = if aPlayerCount > anotherPlayerCount then
 diag :: Grid -> [Player]
 diag grid = [grid !! n !! n | n <- [0..size-1]]
 
+piece :: Grid -> Pos -> Player
+piece grid pos = (grid !! (fst pos)) !! (snd pos)
+
+isVacant :: Grid -> Pos -> Bool
+isVacant grid pos = (piece grid pos) == B
