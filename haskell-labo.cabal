@@ -22,6 +22,7 @@ library
                    ProgrammingInHaskell2.Chap06,
                    ProgrammingInHaskell2.Chap10,
                    ProgrammingInHaskell2.Chap11,
+                   ProgrammingInHaskell2.Chap12,
                    Reversi 
   -- other-modules:       
   -- other-extensions:    
